@@ -19,15 +19,18 @@ return require('packer').startup(function(use)
   })
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSupdate'})
+  -- It needs gcc installed. On Windows use "minggw" @ https://github.com/niXman/mingw-builds-binaries/releases
+  -- After that, register it in PATH
   -- After install run: :TSInstall asm bash c css csv dockerfile html javascript json lua make markdown nasm python rust sql
 
   use 'tpope/vim-fugitive'
   use 'tpope/vim-surround'
   use('mg979/vim-visual-multi', { branch = 'master' })
 
+  -- Coc-clangd needs clang installed. On Windows, use https://github.com/clangd/clangd/releases/tag/17.0.3
+  -- Coc-rust-analyzer needs rust-analyzer installed. Use the command "rustup component add rust-analyzer" and add it (on Windows) to PATH
   -- COC needs nodejs: https://nodejs.org/en/download/
   use {'neoclide/coc.nvim', branch = 'release'}
   -- After COC installed, install LSPs:
-  -- :CocInstall coc-json coc-tsserver coc-pyright coc-rls coc-clangd coc-sh coc-html coc-sumneko-lua
-  -- If clangd isn't found, run: :CocCommand clangd.install
+  -- :CocInstall coc-json coc-tsserver coc-pyright coc-rust-analyzer coc-clangd coc-sh coc-html coc-sumneko-lua
 end)
