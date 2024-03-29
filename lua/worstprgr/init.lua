@@ -10,7 +10,11 @@ vim.opt.colorcolumn = "80"
 
 -- Set tabstop and shiftwidth to 4
 vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.shiftwidth = 0
+vim.opt.softtabstop = -1
+vim.opt.shiftround = true
+vim.opt.expandtab = true
+vim.opt.smartindent = true
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
