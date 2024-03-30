@@ -21,7 +21,7 @@ vim.opt.incsearch = true
 
 -- Define listchars
 vim.opt.listchars = {
-    eol = "↵",
+--    eol = "↵",
     trail = "~",
     tab = ">-",
     nbsp = "␣"
