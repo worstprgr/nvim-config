@@ -15,3 +15,11 @@ vim.keymap.set('n', '<leader>s', ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left>
 vim.keymap.set('n', '<leader>c', '"+y')
 vim.keymap.set('n', '<leader>cc', '"+yy')
 vim.keymap.set('v', '<leader>c', '"+y')
+
+-- Modify windows/panes
+vim.keymap.set('n', '<leader>.', '5<C-w>>')
+vim.keymap.set('n', '<leader>,', '5<C-w><')
+vim.keymap.set('n', '<leader>+', '2<C-w>+')
+vim.keymap.set('n', '<leader>#', '2<C-w>-')
+vim.keymap.set('n', '<leader>-', '<C-w>=')
+
