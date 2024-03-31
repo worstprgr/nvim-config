@@ -10,6 +10,9 @@ And add the following line, which should point to the path, where your C lib is 
 In my case I'm using the lib from gcc:  
 `-IC:/<path to mingw>/mingw64/x86_64-w64-mingw32/include`  
 
+**Hint**  
+If you want to know, where your `gcc` is installed, use `where gcc` on the Windows command line.  
+
 *Note 1:*  
 ```text
 -IC:/<path to mingw>/mingw64/x86_64-w64-mingw32/include
