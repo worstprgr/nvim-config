@@ -1,4 +1,40 @@
 # My Neovim config
+## Shortcuts
+
+```text
+Go to definition:         <space>gd
+Go back from definition:  <C-o>
+
+File explorer:            <space>pv
+Fuzzy finder:             <space>pf
+
+Brackets around word:     N: yswb
+Brackets around mark:     V: S)
+     *curly brackets:     V: S}
+
+Move line up:             V: K
+        down:             V: J
+
+```
+
+```text
+New pane:                 :new
+                          :vnew
+
+Split pane:               :sp
+                          :vsp
+
+Change pane:              <C-w>hjkl (or arrow keys)
+Close pane:               :q
+
+Change pane size:         <space>, (horizontal)
+                          <space>.
+                          <space>+ (vertical)
+                          <space># 
+
+Reset pane size:          <space>-
+```
+
 ## Notes
 ### clangd can't find C header files
 On Windows 10+, if clangd complains about missing header files,
