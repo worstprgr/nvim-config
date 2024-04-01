@@ -15,6 +15,7 @@ Brackets around mark:     V: S)
 Move line up:             V: K
         down:             V: J
 
+Copy to OS clipboard:     V: <space>c
 ```
 
 ```text
