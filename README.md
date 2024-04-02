@@ -16,6 +16,8 @@ Move line up:             V: K
         down:             V: J
 
 Copy to OS clipboard:     V: <space>c
+
+Show vertical diff:       :vert diffs <filename>
 ```
 
 ```text
