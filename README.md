@@ -2,9 +2,7 @@
 ## Shortcuts
 
 ```text
-Go to definition:         <space>gd
-Go back from definition:  <C-o>
-
+  ~Misc
 File explorer:            <space>pv
 Fuzzy finder:             <space>pf
 
@@ -21,6 +19,7 @@ Show vertical diff:       :vert diffs <filename>
 ```
 
 ```text
+  ~Panes
 New pane:                 :new
                           :vnew
 
@@ -37,6 +36,61 @@ Change pane size:         <space>, (horizontal)
 
 Reset pane size:          <space>-
 ```
+
+```text
+  ~Module :Ex
+Toggle hidden files       gh
+Create file               %
+Create directory          d
+Delete file/directory     D
+Rename file/directory     R
+
+Assign target dir         mt
+Mark file/dir for cp/mv   mf
+Copy marked to target     mc
+Move marked to target     mm
+Run ext. cmd on marked    mx
+```
+
+```text
+  ~Module fugitive
+Open Git cmd              <space>gs
+
+stage (add) file          s
+unstage                   u
+toggle stage/unstage      -
+unstage everything        U
+
+create commit             cc
+amend commit (w/ msg)     ca
+amend commit (w/o msg)    ce
+
+toggle inline diff        =
+insert inline diff        >
+
+Git diff split            dd
+close diff buffer         dq
+
+open in new hsplit        gO
+open in new tab           O
+```
+
+```text
+  ~Module telescope
+Find files                <space>pf
+Find files (git)          <C-p>
+Grep                      <space>ps
+```
+
+```text
+  ~Module coc
+Go to definition          gd
+Go to type def            gy
+Go to implementation      gi
+Go to references          gr
+Jump back                 <C-o>
+```
+
 
 ## Notes
 ### clangd can't find C header files
