@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
 
   use 'tpope/vim-fugitive'
   use 'tpope/vim-surround'
+  use 'tpope/vim-commentary'
   use('mg979/vim-visual-multi', { branch = 'master' })
 
   -- Coc-clangd needs clang installed. On Windows, use https://github.com/clangd/clangd/releases/tag/17.0.3

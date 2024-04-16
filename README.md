@@ -3,38 +3,46 @@
 
 ```text
   ~Misc
-File explorer:            <space>pv
-Fuzzy finder:             <space>pf
+File explorer             <space>pv
+Fuzzy finder              <space>pf
 
-Brackets around word:     N: yswb
-Brackets around mark:     V: S)
-     *curly brackets:     V: S}
+Brackets around word      N: yswb
+Brackets around mark      V: S)
+     *curly brackets      V: S}
 
-Move line up:             V: K
-        down:             V: J
+Move line up              V: K
+        down              V: J
 
-Copy to OS clipboard:     V: <space>c
+Copy to OS clipboard      V: <space>c
 
-Show vertical diff:       :vert diffs <filename>
+Show vertical diff        :vert diffs <filename>
+```
+
+```text
+  ~Comments
+Comment line out          N: gcc
+Combine motions           N: gc<motion>
+Comment marked            V: gc
+Uncomment                 N: gcgc
 ```
 
 ```text
   ~Panes
-New pane:                 :new
+New pane                  :new
                           :vnew
 
-Split pane:               :sp
+Split pane                :sp
                           :vsp
 
-Change pane:              <C-w>hjkl (or arrow keys)
-Close pane:               :q
+Change pane               <C-w>hjkl (or arrow keys)
+Close pane                :q
 
-Change pane size:         <space>, (horizontal)
+Change pane size          <space>, (horizontal)
                           <space>.
                           <space>+ (vertical)
                           <space># 
 
-Reset pane size:          <space>-
+Reset pane size           <space>-
 ```
 
 ```text

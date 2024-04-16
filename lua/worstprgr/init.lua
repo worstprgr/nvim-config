@@ -30,6 +30,7 @@ vim.opt.listchars = {
 -- Enable 'list' option
 vim.opt.list = true
 
+vim.g.netrw_liststyle = 3
 
 -- Rose Pine
 require('rose-pine').setup({
