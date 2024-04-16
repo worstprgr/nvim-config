@@ -33,5 +33,5 @@ return require('packer').startup(function(use)
   -- COC needs nodejs: https://nodejs.org/en/download/
   use {'neoclide/coc.nvim', branch = 'release'}
   -- After COC installed, install LSPs:
-  -- :CocInstall coc-json coc-tsserver coc-pyright coc-rust-analyzer coc-clangd coc-sh coc-html coc-sumneko-lua
+  -- :CocInstall coc-json coc-tsserver coc-pyright coc-rust-analyzer coc-clangd coc-sh coc-html coc-sumneko-lua coc-svelte
 end)
