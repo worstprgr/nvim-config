@@ -9,6 +9,7 @@ Fuzzy finder              <space>pf
 Brackets around word      N: yswb
 Brackets around mark      V: S)
      *curly brackets      V: S}
+Delete delimiters         N: ds<delimiter>
 
 Move line up              V: K
         down              V: J
