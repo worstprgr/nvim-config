@@ -6,7 +6,7 @@ vim.opt.guicursor = 'n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20'
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "120"
 
 -- Set tabstop and shiftwidth to 4
 vim.opt.tabstop = 4

@@ -1,7 +1,17 @@
+local function set_python_env()
+    local os = vim.loop.os_uname().sysname
+    if os == 'Windows_NT' then
+        vim.keymap.set('n', '<F5>', ':!python %<CR>')
+    elseif os == 'Linux' then
+        vim.keymap.set('n', '<F5>', ':!python3 %<CR>')
+    end
+end
+
+
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
-vim.keymap.set('n', '<F5>', ':!python3 %<CR>')
+set_python_env()
 vim.keymap.set('n', '<F4>', ':!make<CR>')
 
 -- Move marked lines up
