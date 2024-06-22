@@ -14,6 +14,11 @@ Delete delimiters         N: ds<delimiter>
 Move line up              V: K
         down              V: J
 
+half-page down            N: <C-d>
+half-page up              N: <C-u>
+page up                   N: <C-b>
+page down                 N: <C-f>
+
 Copy to OS clipboard      V: <space>c
 
 Show vertical diff        :vert diffs <filename>
@@ -92,11 +97,10 @@ Grep                      <space>ps
 ```
 
 ```text
-  ~Module coc
+  ~Module LSP (cmp)
 Go to definition          gd
-Go to type def            gy
-Go to implementation      gi
-Go to references          gr
+Go to references          <space>rr
+Signature Help            <C-h>
 Jump back                 <C-o>
 ```
 
