@@ -27,11 +27,20 @@ return require('packer').startup(function(use)
   use 'tpope/vim-surround'
   use 'tpope/vim-commentary'
   use('mg979/vim-visual-multi', { branch = 'master' })
-
-  -- Coc-clangd needs clang installed. On Windows, use https://github.com/clangd/clangd/releases/tag/17.0.3
-  -- Coc-rust-analyzer needs rust-analyzer installed. Use the command "rustup component add rust-analyzer" and add it (on Windows) to PATH
-  -- COC needs nodejs: https://nodejs.org/en/download/
-  use {'neoclide/coc.nvim', branch = 'release'}
-  -- After COC installed, install LSPs:
-  -- :CocInstall coc-json coc-tsserver coc-pyright coc-rust-analyzer coc-clangd coc-sh coc-html coc-sumneko-lua coc-svelte
+  use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+  }
+  
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-vsnip'
+  use 'hrsh7th/vim-vsnip'
+  use 'saadparwaiz1/cmp_luasnip'
+  use 'L3MON4D3/LuaSnip'
+  use 'rafamadriz/friendly-snippets'
 end)
