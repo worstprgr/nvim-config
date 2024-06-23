@@ -43,6 +43,11 @@ require('mason-lspconfig').setup({
                 vim.env.VIMRUNTIME,
               }
             }
+          },
+          ['rust-analyzer'] = {
+            cargo = {
+                features = { "ssr" }
+            }
           }
         }
       })
