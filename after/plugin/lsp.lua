@@ -20,7 +20,16 @@ local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 'rust_analyzer'},
+  ensure_installed = {
+      'tsserver',
+      'rust_analyzer',
+      'asm_lsp',
+      'clangd',
+      'lua_ls',
+      'pylsp',
+      'svelte',
+      'tailwindcss',
+  },
   handlers = {
     function(server_name)
       require('lspconfig')[server_name].setup({
@@ -47,18 +56,18 @@ require('mason-lspconfig').setup({
         }
       })
     end,
-    rust_analyzer = function()
-      require('lspconfig').rust_analyzer.setup({
-        capabilities = lsp_capabilities,
-        settings = {
-          ["rust-analyzer"] = {
-              cargo = {
-                  features = { "ssr" }
-              }
-          },
-        },
-      })
-    end,
+    -- rust_analyzer = function()
+    --   require('lspconfig').rust_analyzer.setup({
+    --     capabilities = lsp_capabilities,
+    --     settings = {
+    --       ["rust-analyzer"] = {
+    --           cargo = {
+    --               features = { "ssr" }
+    --           }
+    --       },
+    --     },
+    --   })
+    -- end,
   }
 })
 
