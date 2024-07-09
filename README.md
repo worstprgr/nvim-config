@@ -22,6 +22,8 @@ page down                 N: <C-f>
 Copy to OS clipboard      V: <space>c
 
 Show vertical diff        :vert diffs <filename>
+
+Convert \ to /            V: <space>win
 ```
 
 ```text

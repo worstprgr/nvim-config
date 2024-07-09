@@ -33,3 +33,6 @@ vim.keymap.set('n', '<leader>+', '2<C-w>+')
 vim.keymap.set('n', '<leader>#', '2<C-w>-')
 vim.keymap.set('n', '<leader>-', '<C-w>=')
 
+-- Convert Backslashes to forwardslashes
+vim.keymap.set('v', '<leader>win', ":s/\\\\/\\//g<Enter><$><Esc>")
+
