@@ -26,6 +26,7 @@ require('mason-lspconfig').setup({
       'asm_lsp',
       'clangd',
       'lua_ls',
+      'pylsp',
       'svelte',
       'tailwindcss',
   },
