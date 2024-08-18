@@ -56,18 +56,21 @@ require('mason-lspconfig').setup({
         }
       })
     end,
-    -- rust_analyzer = function()
-    --   require('lspconfig').rust_analyzer.setup({
-    --     capabilities = lsp_capabilities,
-    --     settings = {
-    --       ["rust-analyzer"] = {
-    --           cargo = {
-    --               features = { "ssr" }
-    --           }
-    --       },
-    --     },
-    --   })
-    -- end,
+    pylsp = function()
+        require('lspconfig').pylsp.setup({
+            capabilities = lsp_capabilities,
+            settings = {
+                pylsp = {
+                    plugins = {
+                        pycodestyle={
+                            enabled=true,
+                            ignore={'W391'},
+                        },
+                    }
+                }
+            }
+        })
+    end,
   }
 })
 
