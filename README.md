@@ -5,6 +5,7 @@
   ~Misc
 File explorer             <space>pv
 Fuzzy finder              <space>pf
+Grep search               <space>ps
 
 Brackets around word      N: yswb
 Brackets around mark      V: S)
