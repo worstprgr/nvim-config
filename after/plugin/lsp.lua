@@ -64,7 +64,7 @@ require('mason-lspconfig').setup({
                     plugins = {
                         pycodestyle={
                             enabled=true,
-                            ignore={'W391', 'E501'},
+                            ignore={'W391', 'E501', 'W291'},
                         },
                     }
                 }
