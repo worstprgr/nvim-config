@@ -21,7 +21,6 @@ local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 require('mason').setup({})
 require('mason-lspconfig').setup({
   ensure_installed = {
-      'tsserver',
       'rust_analyzer',
       'clangd',
       'lua_ls',
@@ -75,10 +74,6 @@ require('mason-lspconfig').setup({
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
-
--- this is the function that loads the extra snippets to luasnip
--- from rafamadriz/friendly-snippets
-require('luasnip.loaders.from_vscode').lazy_load()
 
 cmp.setup({
   sources = {
