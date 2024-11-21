@@ -27,6 +27,9 @@ require('mason-lspconfig').setup({
       'pylsp',
       'svelte',
       'tailwindcss',
+      'html',
+      'cssls',
+      'vtsls',
   },
   handlers = {
     function(server_name)
