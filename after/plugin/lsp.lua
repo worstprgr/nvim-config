@@ -30,6 +30,7 @@ require('mason-lspconfig').setup({
       'html',
       'cssls',
       'vtsls',
+      'asm_lsp',
   },
   handlers = {
     function(server_name)
